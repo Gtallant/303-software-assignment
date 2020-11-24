@@ -1,7 +1,6 @@
 .User {
   text-align: center;
   padding: 8px 16px;
-  border: 1px solid #282c34;
   border-radius: 4px;
   background: #ffffff;
 }
@@ -12,7 +11,7 @@
   flex-wrap: wrap;
   padding: 16px;
   background-color: #ffffff;
-  border: 1px solid #282c34;
+  margin: 0 8px;
   border-top: none;
 }
 

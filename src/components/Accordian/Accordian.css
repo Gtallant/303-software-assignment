@@ -9,4 +9,14 @@
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
+  border: 2px solid #05386B;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: 1px;
+}
+
+.Accordian-header:active, 
+.Accordian-header:focus,
+.Accordian-header:hover {
+  outline: none;
 }
