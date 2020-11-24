@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './UsersList.css';
 import { UserType } from './../../types';
+import User from './../User/User';
 
 function UsersList() {
   const [users, setUsers] = useState<UserType[] | undefined>([]);
@@ -14,9 +15,10 @@ function UsersList() {
     console.log(apiUrl);
   }, []);
   console.log(users);
+  const UserElements = users?.map(user => <User key={user.id} userData={user} />);
   return (
     <div className="UsersList">
-      Users List
+      {UserElements}
     </div>
   );
 }
